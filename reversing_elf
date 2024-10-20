@@ -1,0 +1,17 @@
+***task-1
+$chmod +x crackme1
+$./crackme1
+flag{not_that_kind_of_elf}
+
+
+***task-2
+$chmod +x crackme2
+$strings crackme2
+get the pass- super_secret_password
+
+$./crackme2 super_secret_password
+flag{if_i_submit_this_flag_then_i_will_get_points}
+
+
+***task-3
+
