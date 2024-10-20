@@ -9,9 +9,14 @@ $chmod +x crackme2
 $strings crackme2
 get the pass- super_secret_password
 
+we can also use ltrace to find the password frrom strcmp function-
+$ltrace ./crackme2 meow
+got this output- strcmp("meow", "super_secret_password")
+
 $./crackme2 super_secret_password
 flag{if_i_submit_this_flag_then_i_will_get_points}
 
 
 ***task-3
+
 
