@@ -1,3 +1,9 @@
+We need tools- strings , ltrace , ghidra , python3 , base64
+
+For every task, give execution permission using chmod 
+
+
+
 ***task-1
 $chmod +x crackme1
 $./crackme1
@@ -18,5 +24,45 @@ flag{if_i_submit_this_flag_then_i_will_get_points}
 
 
 ***task-3
+$strings carckme3
+you'll get the base64 hash and to crack it -
+$echo "<hash>" | base64 -d
+flag - f0r_y0ur_5ec0nd_le55on_unbase64_4ll_7h3_7h1ng5
+
+
+***task-4
+$ltrace ./crackme4 <anything>
+you'll get the flag from compare function
+flag - my_m0r3_secur3_pwd
+
+
+***task-5
+$ltrace ./crackme5
+this will show up a input field and now to get the flag- input something and you'll get the flag
+flag- OfdlDSA|3tXb32~X3tX@sX`4tXtz
+
+
+***task-6
+Use "ghidra" tool and check out the main function to see whats going on...you will find a function 
+named "my_secure_test"
+flag- 1337_pwd
+
+
+***task-7
+Analyze crackme7 on ghidra...we got "0x7a69" in main function...try python3, you'll get "31337"
+now run the crackme7 and input 31337
+flag - flag{much_reversing_very_ida_wow}
+
+
+***task-8
+Analyze crackme8 on ghidra ...we got "-0x35010ff3" in main function...try python 3 , you'll get "-889262067"
+$./crackme8 -889262067
+flag- flag{at_least_this_cafe_wont_leak_your_credit_card_numbers}
+
+
+
+
+
+
 
 
